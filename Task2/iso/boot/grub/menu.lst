@@ -1,0 +1,5 @@
+default=0
+timeout=0  
+hiddenmenu 
+title os  
+kernel /boot/kernel.elf 
