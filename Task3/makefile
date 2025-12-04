@@ -37,7 +37,8 @@ os.iso: kernel.elf
         iso
 
 run: os.iso
-	qemu-system-i386 -boot d -cdrom os.iso -m 32
+	qemu-system-i386 -nographic -boot d -cdrom os.iso -m 32
+
 
 run-nographic: os.iso
 	qemu-system-i386 -nographic -boot d -cdrom os.iso -m 32
