@@ -1,4 +1,5 @@
 # Worksheet2 Part2 – Mini x86 OS (Keyboard + Interrupts)
+![MyOS ](ws2p2task1.png)
 
 This project is a tiny 32-bit x86 OS kernel based on the course book
 *“Writing a Simple Operating System from Scratch”*.
