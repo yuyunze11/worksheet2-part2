@@ -6,7 +6,7 @@ This directory contains the low-level building blocks of my 32-bit x86 OS:
 - PIC + IDT + interrupt handling
 - A small input buffer (`readline`)
 - A simple text terminal / shell
-
+![name](ws2p2Task3.jpg)
 ---
 
 # 1. Basic Types
