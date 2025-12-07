@@ -1,7 +1,6 @@
-# Low-level OS Modules (Drivers, Interrupts & Terminal)
-
+# Drivers, Interrupts & Terminal
 This directory contains the low-level building blocks of my 32-bit x86 OS:
-
+![name](ws2p2Task3.jpg)
 - VGA text-mode output
 - Keyboard input
 - PIC + IDT + interrupt handling
@@ -10,9 +9,9 @@ This directory contains the low-level building blocks of my 32-bit x86 OS:
 
 ---
 
-## 1. Basic Types
+# 1. Basic Types
 
-### `types.h`
+#  `types.h`
 
 Common integer types and framebuffer colour constants used by all drivers. :contentReference[oaicite:0]{index=0}  
 
