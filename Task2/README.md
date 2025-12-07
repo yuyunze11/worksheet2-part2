@@ -1,4 +1,4 @@
-# Low-level OS Code Overview
+# OS Code
 
 This code implements the low-level building blocks of a tiny 32-bit x86 OS:
 
@@ -10,9 +10,8 @@ This code implements the low-level building blocks of a tiny 32-bit x86 OS:
 
 ---
 
-## 1. Basic Types
 
-### `types.h`
+# `types.h`
 
 Defines fixed-width integer types and colour constants used across the kernel:
 
@@ -24,7 +23,6 @@ typedef short          s16int;
 typedef unsigned char  u8int;
 typedef char           s8int;
 
-/* example colours */
 #define BLACK   0
 #define BLUE    1
 #define GREEN   2
@@ -32,8 +30,7 @@ typedef char           s8int;
 
 
 
-2. Port I/O
-io.h / io.s
+2. io.h / io.s
 
 Thin wrappers around the x86 in / out instructions:
 
@@ -143,7 +140,6 @@ The interrupt handler uses this to turn raw scan codes into printable characters
 
 6. Interrupt Descriptors & C-level Handler
 interrupts.h / interrupts.c
-
 Sets up the IDT and implements the common C interrupt handler.
 
 Key structures (simplified):
@@ -163,7 +159,6 @@ struct IDT {
 
 
 Setting one IDT entry:
-
 void interrupts_init_descriptor(s32int index, u32int address) {
     idt_descriptors[index].offset_low  = address & 0xFFFF;
     idt_descriptors[index].offset_high = (address >> 16) & 0xFFFF;
